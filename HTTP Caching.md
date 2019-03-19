@@ -71,10 +71,10 @@ _cache-eviction_: periodically removing items from the cache because caches have
 	* it can only be validated if the server provided a validator - be it _strong_ or _weak_
 
 ### ETags
-	* The ETag response header can be used as a strong validator
-	* The HTTP user-agent (like a browser) doesn’t know what this string represents and can’t predict its value
-	* If an ETag was included in the response, the client can use it in subsequent requests
-		* It can be passed with the `If-None-Match` header
+* The ETag response header can be used as a strong validator
+* The HTTP user-agent (like a browser) doesn’t know what this string represents and can’t predict its value
+* If an ETag was included in the response, the client can use it in subsequent requests
+	* It can be passed with the `If-None-Match` header
 ```
 If-None-Match: "bfc13a64729c4290ef5b2c2730249c88ca92d82d"
 ```
